@@ -1,0 +1,1 @@
+Letakkan file QRIS kamu di sini dengan nama: qris-code.png

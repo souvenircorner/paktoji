@@ -17,10 +17,10 @@ export default function Home() {
           </span>
           <h1 className="text-5xl md:text-6xl font-bold text-stone-900 mb-6 leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
             Selamat Datang di
-            <span className="text-orange-600 block">PAKTOJI</span>
+            <span className="text-orange-600 block">TOKO PAKTOJI</span>
           </h1>
           <p className="text-lg text-stone-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Temukan souvenir dan produk custom berkualitas tinggi untuk membuat momen spesial Anda tak terlupakan.
+            Solusi belanja produk digital murah dan cepat
           </p>
           <a href="#products">
             <button className="btn-primary text-base px-8 py-4">

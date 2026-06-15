@@ -52,7 +52,7 @@ export default function QRISDisplay() {
 
         <div className="p-3 bg-orange-50 rounded-lg border border-orange-100">
           <p className="text-xs text-orange-700 text-center font-medium">
-            ⚡ Pembayaran langsung dikonfirmasi otomatis
+            ⚡ Jangan lupa lakukan konfirmasi pembayaran setelah transfer
           </p>
         </div>
       </div>

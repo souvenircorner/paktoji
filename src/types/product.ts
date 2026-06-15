@@ -5,6 +5,7 @@ export interface Product {
   image: string
   description: string
   detail: string
+  type: 'digital' | 'physical'
 }
 
 export interface CheckoutData {

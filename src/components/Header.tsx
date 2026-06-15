@@ -8,7 +8,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/">
           <h1 className="text-2xl font-bold text-orange-600 cursor-pointer tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
-            PAKTOJI
+            TOKO PAKTOJI
           </h1>
         </Link>
         <nav className="flex items-center gap-6">

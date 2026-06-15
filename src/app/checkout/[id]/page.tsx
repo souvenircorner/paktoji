@@ -1,13 +1,16 @@
 'use client'
 
 import Link from 'next/link'
-import products from '@/data/products.json'
+import productsData from '@/data/products.json'
 import CheckoutForm from '@/components/CheckoutForm'
 import QRISDisplay from '@/components/QRISDisplay'
+import { Product } from '@/types/product'
 
 interface CheckoutPageProps {
   params: { id: string }
 }
+
+const products = productsData as Product[]
 
 export default function CheckoutPage({ params }: CheckoutPageProps) {
   const product = products.find((p) => p.id === parseInt(params.id))
@@ -41,12 +44,8 @@ export default function CheckoutPage({ params }: CheckoutPageProps) {
         Pembayaran Pesanan
       </h1>
 
-      {/* Layout: 2/3 content + 1/3 QRIS */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-
-        {/* Left: Product summary + form */}
         <div className="lg:col-span-2 space-y-6">
-
           {/* Product Summary */}
           <div className="bg-white rounded-2xl shadow-sm border border-stone-100 p-6">
             <h2 className="text-lg font-semibold text-stone-800 mb-4" style={{ fontFamily: 'var(--font-display)' }}>
@@ -67,6 +66,13 @@ export default function CheckoutPage({ params }: CheckoutPageProps) {
                 <p className="text-sm text-stone-500 mt-1">
                   Rp {product.price.toLocaleString('id-ID')} / unit
                 </p>
+                <span className={`inline-flex items-center gap-1 mt-1 px-2 py-0.5 rounded-full text-xs font-semibold ${
+                  product.type === 'physical'
+                    ? 'bg-amber-100 text-amber-700'
+                    : 'bg-blue-100 text-blue-700'
+                }`}>
+                  {product.type === 'physical' ? '📦 Produk Fisik' : '💾 Produk Digital'}
+                </span>
               </div>
             </div>
           </div>
@@ -80,7 +86,7 @@ export default function CheckoutPage({ params }: CheckoutPageProps) {
           </div>
         </div>
 
-        {/* Right: QRIS */}
+        {/* QRIS */}
         <div className="lg:col-span-1">
           <QRISDisplay />
         </div>

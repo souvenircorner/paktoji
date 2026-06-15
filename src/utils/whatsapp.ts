@@ -1,34 +1,61 @@
 export interface OrderMessage {
   productName: string
+  productType: 'digital' | 'physical'
   quantity: number
   totalPrice: number
+  shippingCost: number
+  shippingZone: string
+  address: string
   phone: string
   email: string
 }
 
 export const generateWhatsAppMessage = ({
   productName,
+  productType,
   quantity,
   totalPrice,
+  shippingCost,
+  shippingZone,
+  address,
   phone,
   email,
 }: OrderMessage): string => {
-  const message = `
+  const isPhysical = productType === 'physical'
+  const productPrice = totalPrice - shippingCost
+
+  let message = `
 *Konfirmasi Pembayaran Pesanan*
 ━━━━━━━━━━━━━━━━━━━━
 
+*Detail Produk:*
 Produk: ${productName}
+Tipe: ${isPhysical ? '📦 Produk Fisik' : '💾 Produk Digital'}
 Jumlah: ${quantity} unit
-Total: Rp ${totalPrice.toLocaleString('id-ID')}
+Harga Produk: Rp ${productPrice.toLocaleString('id-ID')}`.trim()
+
+  if (isPhysical && shippingCost > 0) {
+    message += `
+Ongkir (${shippingZone}): Rp ${shippingCost.toLocaleString('id-ID')}`
+  }
+
+  message += `
+*Total: Rp ${totalPrice.toLocaleString('id-ID')}*
 
 *Data Pembeli:*
 Nomor Telp: ${phone}
-Email: ${email}
+Email: ${email}`
 
-_Menunggu konfirmasi pembayaran dari admin._
-`.trim()
+  if (isPhysical && address) {
+    message += `
+Alamat: ${address}`
+  }
 
-  return message
+  message += `
+
+_Menunggu konfirmasi pembayaran dari admin._`
+
+  return message.trim()
 }
 
 export const createWhatsAppLink = ({

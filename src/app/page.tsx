@@ -1,7 +1,10 @@
 'use client'
 
-import products from '@/data/products.json'
+import productsData from '@/data/products.json'
 import ProductGrid from '@/components/ProductGrid'
+import { Product } from '@/types/product'
+
+const products = productsData as Product[]
 
 export default function Home() {
   return (

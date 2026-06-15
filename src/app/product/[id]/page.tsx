@@ -1,7 +1,10 @@
 'use client'
 
 import Link from 'next/link'
-import products from '@/data/products.json'
+import productsData from '@/data/products.json'
+import { Product } from '@/types/product'
+
+const products = productsData as Product[]
 
 interface ProductDetailPageProps {
   params: { id: string }

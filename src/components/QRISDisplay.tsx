@@ -8,28 +8,37 @@ export default function QRISDisplay() {
       </h3>
 
       <div className="flex justify-center mb-4">
-        <div className="bg-stone-50 p-3 rounded-xl border-2 border-dashed border-stone-200">
+        <div className="bg-white p-3 rounded-xl border-2 border-dashed border-stone-200">
           <img
             src="/qris-code.png"
             alt="QRIS Code"
             className="w-48 h-48 object-contain"
             onError={(e) => {
               const target = e.target as HTMLImageElement
-              target.src = 'https://placehold.co/200x200/f5f5f4/ea580c?text=QRIS+Code'
+              target.src = 'https://placehold.co/200x200/ffffff/ea580c?text=QRIS+Code'
             }}
           />
         </div>
       </div>
 
-      <p className="text-xs text-stone-500 text-center leading-relaxed">
+      <p className="text-xs text-stone-500 text-center leading-relaxed mb-3">
         Scan menggunakan aplikasi pembayaran digital
         <br />
         (GoPay, OVO, Dana, ShopeePay, dll)
       </p>
 
-      <div className="mt-4 p-3 bg-orange-50 rounded-lg border border-orange-100">
+      {/* Download Button */}
+      <a
+        href="/qris-code.png"
+        download="QRIS-PAKTOJI.png"
+        className="flex items-center justify-center gap-2 w-full py-2.5 px-4 border-2 border-orange-500 text-orange-600 font-semibold text-sm rounded-lg hover:bg-orange-50 transition-colors mb-3"
+      >
+        ⬇️ Download QRIS
+      </a>
+
+      <div className="p-3 bg-orange-50 rounded-lg border border-orange-100">
         <p className="text-xs text-orange-700 text-center font-medium">
-          ⚡ Pembayaran langsung dikonfirmasi otomatis
+          ⚡ Jangan lupa lakukan konfirmasi pembayaran setelah transfer
         </p>
       </div>
     </div>

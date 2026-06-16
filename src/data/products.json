@@ -1,38 +1,51 @@
 [
   {
     "id": 1,
-    "name": "Stiker Whatsapp Custom Foto Sendiri",
-    "price": 35000,
-    "image": "/products/stiker_custom.png",
-    "description": "Sticker Whatsapp custom, bisa menggunakan foto sendiri",
-    "detail": "Sticker Whatsapp custom, bisa menggunakan foto sendiri dan request ekspresi serta tulisan. Ini adalah produk digital, tidak akan ada produk fisik yang dikirimkan. Stiker akan dikirimkan langsung cia Whatsapp setelah pembayaran terkonfirmasi",
-    "type": "digital"
+    "name": "Souvenir Gantungan Kunci Kayu",
+    "price": 15000,
+    "images": [
+      "/products/product1.jpg",
+      "/products/product1b.jpg",
+      "/products/product1c.jpg"
+    ],
+    "description": "Gantungan kunci kayu ukiran cantik, cocok untuk souvenir pernikahan & ulang tahun.",
+    "detail": "Gantungan kunci berbahan kayu jati pilihan dengan ukiran tangan. Tersedia dalam berbagai desain. Ukuran: 5x3 cm. Dapat dikustomisasi dengan nama atau inisial. Cocok untuk souvenir pernikahan, ulang tahun, wisuda, dan acara spesial lainnya. Dikemas dalam kantong organza premium.",
+    "type": "physical"
   },
   {
     "id": 2,
-    "name": "Mug Anime",
+    "name": "Kipas Souvenir Batik",
     "price": 25000,
-    "image": "/products/product2.jpg",
-    "description": "Mug tema anime",
-    "detail": "Mug tema anime",
+    "images": [
+      "/products/product2.jpg",
+      "/products/product2b.jpg"
+    ],
+    "description": "Kipas lipat motif batik berkualitas tinggi, elegan untuk berbagai acara.",
+    "detail": "Kipas lipat dengan motif batik khas nusantara. Bahan: kayu + kain batik premium. Ukuran: 30 cm (terbuka). Pilihan motif: Parang, Kawung, Mega Mendung. Sangat cocok untuk souvenir pernikahan adat Jawa, acara budaya, dan hadiah eksklusif.",
     "type": "physical"
   },
   {
     "id": 3,
-    "name": "Kartu Afirmasi/Kartu Motivasi",
-    "price": 23000,
-    "image": "/products/product3.jpg",
-    "description": "Kartu Afirmasi",
-    "detail": "Kartu afirmasi seri Morning Quotes",
+    "name": "Totebag Canvas Custom",
+    "price": 35000,
+    "images": [
+      "/products/product3.jpg",
+      "/products/product3b.jpg"
+    ],
+    "description": "Totebag canvas tebal dengan printing custom, praktis dan ramah lingkungan.",
+    "detail": "Totebag berbahan canvas tebal 350gsm. Ukuran: 35x40 cm. Teknik cetak: sablon plastisol tahan lama. Tersedia warna: Natural, Hitam, Putih, Navy. Bisa custom desain/logo. Minimum order 50 pcs untuk custom.",
     "type": "physical"
   },
   {
     "id": 4,
-    "name": "Stiker Whatsapp Tema KPOP",
-    "price": 35000,
-    "image": "/products/product4.jpg",
-    "description": "Stiker WA",
-    "detail": "Stiker WA",
+    "name": "Mug Keramik Custom",
+    "price": 45000,
+    "images": [
+      "/products/product4.jpg",
+      "/products/product4b.jpg"
+    ],
+    "description": "Mug keramik putih dengan printing foto/desain custom berkualitas tinggi.",
+    "detail": "Mug keramik food grade kapasitas 330ml. Teknik cetak: sublimasi full warna. Tahan cuci, warna tidak luntur. Ukuran cetak: full wrap atau satu sisi. Cocok untuk: souvenir foto keluarga, merchandise perusahaan, hadiah ulang tahun.",
     "type": "digital"
   }
 ]

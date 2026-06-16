@@ -53,7 +53,7 @@ export default function CheckoutPage({ params }: CheckoutPageProps) {
             </h2>
             <div className="flex gap-4 items-center">
               <img
-                src={product.image}
+                src={product.images?.[0] || product.name}
                 alt={product.name}
                 className="w-20 h-20 object-cover rounded-xl"
                 onError={(e) => {

@@ -13,14 +13,14 @@ export default function Home() {
       <section className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-amber-50 to-stone-100 py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <span className="inline-block bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 tracking-wide uppercase">
-            Souvenir & Custom Products
+            Digital Products For Daily Life
           </span>
           <h1 className="text-5xl md:text-6xl font-bold text-stone-900 mb-6 leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
             Selamat Datang di
             <span className="text-orange-600 block">TOKO PAKTOJI</span>
           </h1>
           <p className="text-lg text-stone-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Solusi belanja produk digital murah dan cepat
+            Download, langsung pakai. Nggak ribet.
           </p>
           <a href="#products">
             <button className="btn-primary text-base px-8 py-4">

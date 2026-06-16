@@ -8,13 +8,14 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
+  const thumbnail = product.images?.[0] || '/products/placeholder.jpg'
+
   return (
     <div className="card group">
-      {/* Image */}
       <Link href={`/product/${product.id}`}>
-        <div className="relative w-full h-60 bg-stone-100 overflow-hidden cursor-pointer">
+        <div className="relative w-full h-52 bg-stone-100 overflow-hidden cursor-pointer">
           <img
-            src={product.image}
+            src={thumbnail}
             alt={product.name}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             onError={(e) => {
@@ -22,11 +23,24 @@ export default function ProductCard({ product }: ProductCardProps) {
               target.src = `https://placehold.co/400x300/fff7ed/ea580c?text=${encodeURIComponent(product.name)}`
             }}
           />
+          {product.images?.length > 1 && (
+            <div className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-0.5 rounded-full">
+              +{product.images.length - 1} foto
+            </div>
+          )}
         </div>
       </Link>
 
-      {/* Info */}
       <div className="p-5">
+        <div className="flex items-center gap-2 mb-2">
+          <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${
+            product.type === 'digital'
+              ? 'bg-blue-50 text-blue-600'
+              : 'bg-amber-50 text-amber-600'
+          }`}>
+            {product.type === 'digital' ? '💾 Digital' : '📦 Fisik'}
+          </span>
+        </div>
         <Link href={`/product/${product.id}`}>
           <h3 className="text-base font-semibold text-stone-800 hover:text-orange-600 cursor-pointer mb-2 line-clamp-2 transition-colors">
             {product.name}

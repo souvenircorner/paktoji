@@ -20,7 +20,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             onError={(e) => {
               const target = e.target as HTMLImageElement
-              target.src = `https://placehold.co/400x300/fff7ed/ea580c?text=${encodeURIComponent(product.name)}`
+              target.src = `https://placehold.co/400x400/fff7ed/ea580c?text=${encodeURIComponent(product.name)}`
             }}
           />
           {product.images?.length > 1 && (

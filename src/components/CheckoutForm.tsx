@@ -13,7 +13,7 @@ import {
 import { generateWhatsAppMessage, openWhatsAppChat } from '@/utils/whatsapp'
 import { Product } from '@/types/product'
 
-const BUSINESS_PHONE = '6281223235666'
+const BUSINESS_PHONE = '628998967434'
 
 interface CheckoutFormProps {
   product: Product

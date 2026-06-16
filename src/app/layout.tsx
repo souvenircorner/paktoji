@@ -4,8 +4,8 @@ import Footer from '@/components/Footer'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'PAKTOJI - Toko Souvenir Online',
-  description: 'Penyedia souvenir dan produk custom berkualitas untuk berbagai acara spesial Anda.',
+  title: 'TOKO PAKTOJI - Digital Products For Daily Life',
+  description: '',
 }
 
 export default function RootLayout({

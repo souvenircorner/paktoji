@@ -15,7 +15,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-3">Hubungi Kami</h3>
             <div className="text-stone-400 text-sm space-y-2">
-              <p>WhatsApp: 0812-2323-5666</p>
+              <p>WhatsApp: 0899-896-7434</p>
               <p>Email: pak.toji.fushiguro@gmail.com</p>
             </div>
           </div>
@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-stone-700 pt-6">
           <p className="text-center text-stone-500 text-sm">
-            © {currentYear} TOKO PAKTOJI by Souvenir Corner. All rights reserved.
+            © {currentYear} TOKO PAKTOJI. All rights reserved.
           </p>
         </div>
       </div>

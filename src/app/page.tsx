@@ -50,7 +50,7 @@ export default function Home() {
           Ada pertanyaan?
         </h2>
         <p className="text-orange-100 mb-6 text-lg">
-          Hubungi kami langsung via WhatsApp untuk konsultasi gratis
+          Langsung Whatsapp aja
         </p>
         <a
           href="https://wa.me/6281223235666"

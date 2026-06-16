@@ -53,7 +53,7 @@ export default function Home() {
           Boleeh, langsung klik aja tombol di bawah
         </p>
         <a
-          href="https://wa.me/6281223235666"
+          href="https://wa.me/628998967434"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -47,10 +47,10 @@ export default function Home() {
       {/* CTA Section */}
       <section className="bg-orange-600 py-16 px-4 text-white text-center">
         <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: 'var(--font-display)' }}>
-          Ada pertanyaan?
+          Mau Tanya-tanya Dulu?
         </h2>
         <p className="text-orange-100 mb-6 text-lg">
-          Langsung Whatsapp aja
+          Boleeh, langsung klik aja tombol di bawah
         </p>
         <a
           href="https://wa.me/6281223235666"
